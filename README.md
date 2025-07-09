@@ -16,14 +16,27 @@ O fluxo de testes simula a experiência de um usuário que:
 ## 📁 Estrutura do Projeto
 
 ├── tests
-│ └── amazon.test.js # Arquivo principal com os testes automatizados
+
+│ └── home.test.js # Arquivo com os testes automatizados da home
+
+│ └── busca.test.js # Arquivo com os testes automatizados para busca
+
+│ └── addCart.test.js # Arquivo com os testes automatizados para adcionar um produto ao carrinho
+
 ├── pages
+
 │ ├── homePageAmazon.js # Page Object da home da Amazon
+
 │ ├── ProductPageAmazon.js # Page Object da página do produto
+
 │ └── CartPageAmazon.js # Page Object da página de carrinho
+
 ├── playwright.config.js # Configurações globais do Playwright
+
 ├── package.json # Dependências e scripts do projeto
+
 └── README.md # Documentação do projeto
+
 
 
 ---
@@ -35,40 +48,46 @@ O fluxo de testes simula a experiência de um usuário que:
 - Padrão **Page Object Model (POM)**
 - VS Code com DevContainer (opcional)
 - Git + GitHub
+- Docker
 
 ---
 
 ## ⚙️ Instalação e Execução
 
 ### 1. Clone o repositório
-
 ```bash
 git clone https://github.com/seu-usuario/seu-repo-playwright.git
 cd seu-repo-playwright
 ```
 
-2. Instale as dependências
+
+### 2. Instale as dependências
 ```bash
 npm install
 ```
 
-3. Execute os testes
+
+### 3. Execute os testes
 ```bash
 npx playwright test
 ```
 
-4. Para ver os testes rodando no navegador (modo headed)
+
+### 4. Para ver os testes rodando no navegador (modo headed)
 ```bash
 npx playwright test --headed
 ```
 
-5. Para gerar e visualizar o relatório HTML
+
+### 5. Para gerar e visualizar o relatório HTML
 ```bash
 npx playwright show-report
 ```
 
+---
 
-✅ Funcionalidades Automatizadas
+
+## ✅ Funcionalidades Automatizadas
 Abertura da página inicial da Amazon
 
 - Validação de carregamento da home
@@ -83,8 +102,10 @@ Abertura da página inicial da Amazon
 
 - Adição ao carrinho e validação de inclusão
 
+---
 
-🔍 Diferenciais do Projeto
+
+## 🔍 Diferenciais do Projeto
 - Uso de Page Object Model: separa responsabilidades, facilita manutenções e reaproveitamento de código.
 
 - Boas práticas de automação: uso de test.step() para melhor rastreabilidade.
@@ -94,9 +115,9 @@ Abertura da página inicial da Amazon
 - Testes dinâmicos e realistas: simulando fluxos de navegação reais de usuário.
 
 
-📷 Prints ou Gravações
+---
 
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 Rafael Pereira Eloi do Nascimento
 
