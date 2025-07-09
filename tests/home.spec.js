@@ -17,7 +17,7 @@ test.afterEach(async ({ page }) => {
 
 
 
-test('Validar tela principal da amazon', async () => {
+test('Validate main screen', async () => {
 
     await test.step('Navego para tela principal da amazon.com', async () => {
         await page.goto('https://www.amazon.com.br/');
